@@ -13,7 +13,6 @@ return [
     | a conventional file to locate the various service credentials.
     |
     */
-
     'hcaptcha' => [
         'secret'   => env('HCAPTCHA_SECRET'),
         'site_key' => env('HCAPTCHA_SITE_KEY'),
@@ -27,6 +26,7 @@ return [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
         'endpoint' => env('MAILGUN_ENDPOINT', 'api.mailgun.net'),
+        'scheme' => 'https',
     ],
 
     'postmark' => [
